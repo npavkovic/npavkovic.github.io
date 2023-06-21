@@ -5,16 +5,11 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Nicholas Pavkovic</title>
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@200&display=swap"
-			rel="stylesheet"
-		/>
 	</head>
 	<body>
-		<h1>Nicholas Pavkovic</h1>
-		<h2>(coming soon)</h2>
+	<h1>nicholas pavkovic</h2>
+	<h2>nicholas pavkovic</h3>
+	<h3>nicholas pavkovic</h4>
 	</body>
 </html>
 
@@ -32,40 +27,94 @@
 		padding: 24px;
 	}
 
-	h1 {
-		font-size: 36px;
-		text-transform: uppercase;
-		letter-spacing: 3px;
-		text-align: center;
-		color: white;
-		text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
-		margin: 36px auto;
-		line-height: 1.5;
-	}
+	@keyframes change-background-scale-4 {
+  50% {
+	background-size: 60rem 60rem, 10rem 10rem;
+  }
+  100%, 0% {
+	background-size: 120rem 120rem, 40rem 40rem;
 
-	h2 {
-		font-size: 18px;
-		color: #AAA;
-		mix-blend-mode: multiply;
-	}
+  }
+}
+@keyframes change-background-scale-5 {
+  50% {
+	background-size: 10rem 10rem;
+  }
+  100%, 0% {
+	background-size: 40rem 40rem;
 
-	@keyframes colorcycle {
+  }
+}
+
+@keyframes change-background-scale-3 {
+  50% {
+	background-size: 40rem 40rem, 60rem 60rem, 10rem 10rem;
+  }
+  100%, 0% {
+	background-size: 100rem 100rem, 120rem 120rem, 40rem 40rem;
+
+  }
+}
+
+
+h1, h2, h3 {
+	grid-row: 1;
+	grid-column: 1;
+	font-size: 20vw;
+	line-height: .8;
+	width: min-content;
+	margin: 0 auto;
+	margin: 0;
+	padding: 1rem;
+	background: url(./type-soup.svg);
+	background-repeat: repeat;
+	background-size: 200px 200px;
+	background-position: center;
+	animation: change-background-scale-3 40s infinite;
+	/* background-color: rgba(255,255,255,.05)f; */
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+	-webkit-text-fill-color: transparent;
+	animation-timing-function: ease-in-out;
+	/* mix-blend-mode: multiply; */
+	opacity: .8;
+}
+
+h2 {
+	animation: change-background-scale-4 40s infinite;
+}
+
+h3 {
+	animation: change-background-scale-5 40s infinite;
+}
+
+@media (max-aspect-ratio: 9/10) {
+	h1, h2, h3 {
+		font-size: 20vh;
+		transform-origin: center;
+		transform: rotate(-90deg);
+	}
+}
+
+@keyframes colorcycle {
             100% {
                 background: hsla(300, 30%, 80%, 0.7);
             }
 
             66% {
-                background: hsla(150, 30%,80%, 0.7);
+                background: hsla(150, 50%,60%, 0.7);
             }
 
             33% {
-                background: hsla(100, 30%, 80%, 0.7);
+                background: hsla(100, 40%, 80%, 0.7);
             }
 
             0% {
-                background: hsla(50, 30%, 80%, 0.7);
+                background: hsla(50, 60%, 80%, 0.7);
             }
         }
+
 
 </style>
 
