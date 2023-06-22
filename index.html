@@ -10,6 +10,9 @@
 	<h1>nicholas pavkovic</h1>
 	<h2>nicholas pavkovic</h2>
 	<h3>nicholas pavkovic</h3>
+	<scrim-one></scrim-one>
+	<scrim-two></scrim-two>
+	<scrim-three></scrim-three>
 	</body>
 </html>
 
@@ -24,11 +27,30 @@ body {
 	place-content: center;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	animation: colorcycle 60s alternate infinite;
+	position: relative;
+}
+
+@keyframes fade-in-out {
+	  0%,100% {
+	opacity: 0;
+  }
+  50% {
+	opacity: 1;
+  }
+}
+
+@keyframes fade-out-in {
+	  0%,100% {
+	opacity: .5;
+  }
+  50% {
+	opacity: .2;
+  }
 }
 
 @keyframes change-background-scale-1 {
   50% {
-	background-size: max(10vw, 10vh) max(10vw, 10vh);
+	background-size: max(20vw, 20vh) max(20vw, 20vh);
   }
   100%, 0% {
 	background-size: max(80vw, 80vh) max(80vw, 80vh);
@@ -54,7 +76,6 @@ body {
   }
 }
 
-
 h1, h2, h3 {
 	grid-row: 1;
 	grid-column: 1;
@@ -64,28 +85,46 @@ h1, h2, h3 {
 	margin: 0 auto;
 	margin: 0;
 	padding: 1rem;
-	background: url(type-soup.svg);
+}
+
+h1, h2, h3, scrim-one, scrim-two, scrim-three {
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 900 900'%3E%3Cstyle%3Etext %7B fill:%23fff;fill-opacity:.8;font-size:24pt;white-space:pre %7D%3C/style%3E%3Ctext y='30' textLength='900'%3EAngel Adept Blind Bodice Clique Coast Dunces analog smuggled%3C/text%3E%3Ctext y='60' textLength='900'%3EFurlong Focal Gnome Gondola Human Hoisted frankly zeroings%3C/text%3E%3Ctext y='90' textLength='900'%3EJocose Knoll Koala Linden Loads Millineryclub snob reticent%3C/text%3E%3Ctext y='120' textLength='900'%3ENodule Onset Oddball Pneumo Poncho Quanta Qophs franklinate%3C/text%3E%3Ctext y='150' textLength='900'%3ERhone Roman Snout Sodium Tundra Tocsin Uncle Udder Whaling%3C/text%3E%3Ctext y='180' textLength='900'%3EVulcan Vocal Whale Woman Xmas Xenon Yunnan Young Enact Ios%3C/text%3E%3Ctext y='210' textLength='900'%3EZloty Zodiac. Angel angel adept for the nuance loads of the%3C/text%3E%3Ctext y='240' textLength='900'%3Earena cocoa and quaalude. Blind blind bodice for the submit%3C/text%3E%3Ctext y='270' textLength='900'%3Eoboe of the club snob and abbot. Clique clique coast for the%3C/text%3E%3Ctext y='300' textLength='900'%3Epouch loco of the franc assoc and accede. Dunce dunce docile%3C/text%3E%3Ctext y='330' textLength='900'%3Efor the loudness mastodon of the loud statehood and huddles.%3C/text%3E%3Ctext y='360' textLength='900'%3EEnact enact eosin for the quench coed of the pique canoe and%3C/text%3E%3Ctext y='390' textLength='900'%3Ebleep. Furlong furlong focal for the genuflect profoundly of%3C/text%3E%3Ctext y='420' textLength='900'%3Emotif aloof and offers. Gnome gnome gondola for the impugns%3C/text%3E%3Ctext y='450' textLength='900'%3Elogos of the unplug analog and smuggle. Human human hoisted%3C/text%3E%3Ctext y='480' textLength='900'%3Efor the buddhist alcohol of the riyadh caliph and bathhouse.%3C/text%3E%3Ctext y='510' textLength='900'%3EInlet inlet iodine for the quince champion of the ennui for%3C/text%3E%3Ctext y='540' textLength='900'%3Eand shiite. Justin justin jocose for the djibouti sojourn of%3C/text%3E%3Ctext y='570' textLength='900'%3Eoranj raj and hajjis. Knoll knoll koala for the banknotational%3C/text%3E%3Ctext y='600' textLength='900'%3Eof the dybbuk outlook and trekked. Linden linden loads for the%3C/text%3E%3Ctext y='630' textLength='900'%3Eulna monolog of the consul menthol and shallot. Milliner krill%3C/text%3E%3Ctext y='660' textLength='900'%3Emodal for the alumna solomon of the album custom and summoned.%3C/text%3E%3Ctext y='690' textLength='900'%3ENumber number nodule for the unmade economic of the shotguns%3C/text%3E%3Ctext y='720' textLength='900'%3Ebison and tunnel. Onset onset oddball for the abandon podiums%3C/text%3E%3Ctext y='750' textLength='900'%3Ethe antiquo tempo and moonlit. Pneumo pneumo poncho for whence%3C/text%3E%3Ctext y='780' textLength='900'%3Edauphin opossum of the holdup bishop and supplies. Quantabulous%3C/text%3E%3Ctext y='810' textLength='900'%3Equanta qophs for the inquest sheqel of the cinq coq and succor.%3C/text%3E%3Ctext y='840' textLength='900'%3ERhone rhone roman for the burnt porous of the lemur clamored%3C/text%3E%3Ctext y='870' textLength='900'%3Eoranj raj and hajjis. Knoll knoll koala for the banknotational%3C/text%3E%3Ctext y='900' textLength='900'%3ECrowned hearken with tiny portions of fortified stew braised.%3C/text%3E%3C/svg%3E");
 	background-repeat: repeat;
 	background-size: 200px 200px;
-	background-position: center;
+	background-position: 50%;
 	animation: change-background-scale-1 40s infinite;
 	background-clip: text;
 	-webkit-background-clip: text;
 	color: transparent;
 	-webkit-text-fill-color: transparent;
 	animation-timing-function: ease-in-out;
-	opacity: .8;
+}
+
+scrim-one, scrim-two, scrim-three {
+	position: absolute;
+	inset: 0;
+	background-clip: unset;
+	animation: change-background-scale-1 40s infinite, fade-out-in 40s infinite;
 }
 
 h2 {
-	animation: change-background-scale-2 40s infinite;
 	background-position: 40% 40%;
+	animation: change-background-scale-2 40s infinite;
+}
 
+scrim-two {
+	background-position: 40% 40%;
+	animation: change-background-scale-2 40s infinite, fade-out-in 40s infinite;
 }
 
 h3 {
-	animation: change-background-scale-3 40s infinite;
 	background-position: 60% 60%;
+	animation: change-background-scale-3 40s infinite;
+}
+
+scrim-three {
+	background-position: 60% 60%;
+	animation: change-background-scale-3 40s infinite, fade-out-in 40s infinite;
 }
 
 @media (max-aspect-ratio: 9/10) {
