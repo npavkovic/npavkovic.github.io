@@ -28,7 +28,7 @@ body {
 
 @keyframes change-background-scale-1 {
   50% {
-	background-size: max(55vw, 55vh) max(55vw, 55vh);
+	background-size: max(10vw, 10vh) max(10vw, 10vh);
   }
   100%, 0% {
 	background-size: max(80vw, 80vh) max(80vw, 80vh);
@@ -79,10 +79,13 @@ h1, h2, h3 {
 
 h2 {
 	animation: change-background-scale-2 40s infinite;
+	background-position: 40% 40%;
+
 }
 
 h3 {
 	animation: change-background-scale-3 40s infinite;
+	background-position: 60% 60%;
 }
 
 @media (max-aspect-ratio: 9/10) {
