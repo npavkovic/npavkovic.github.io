@@ -1,0 +1,18 @@
+{% macro createSlides(dataCategory, dataTitle, imagesProperty) %}
+    <div class="slide" data-category="{{ dataCategory }}" data-title="{{ dataTitle }}" id="">
+        <div class="h-slides">
+            {% for item in images[imagesProperty] %}
+                <div class="slide">
+                    <figure>
+                        <img src="{{ item.url }}">
+                        <figcaption>
+                            <eyebrow>{{ item.eyebrow }}</eyebrow>
+                            <h3>{{ item.title }}</h3>
+                            <p>{{ item.description }}</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endmacro %}

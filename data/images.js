@@ -26,6 +26,7 @@ module.exports = function () {
 					url: cloudinary.url(image.public_id, { secure: true })
 				});
 			});
+			console.log(theImages);
 			return theImages;
 		})
 		.catch(err => console.log(err));
