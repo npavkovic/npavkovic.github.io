@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -12,84 +14,539 @@
 
 
 <div id="scrim"></div>
-<div id="menu-control" class="">
-	<svg id="triangle-menu" viewBox="225.08 225.08 49.84 49.84" width="50" height="50">
-		<path d="M 250.058 239.688 L 262.568 253.956 L 237.548 253.956 L 250.058 239.688 Z"></path>
-		<ellipse id="menu-circle" cx="250" cy="250" rx="17.805" ry="17.805"></ellipse>
-	</svg>
-</div>
+<div id="backdrop"></div>
 
-<button id="full-screen-button"></button>
+<nav id="menu-bar">
+	<button id="hamburger" class=""></button>
+	<div id="toc">
+		<header>Contents</header>
+		<ul id="toc-content">
+		</ul>
+	</div>
+	<button id="full-screen-button"></button>
+</nav>
+
 
 <main>
 	<div id="scroll-wrap">
+
+		<div id="previous-chapter"></div>
+		<div id="next-chapter"></div>
+
 		<div id="scroller">
 
 			<!-- PUBLICATION DESIGN -->
 
-			<div class="slide">
-				<h2>Publication Design</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-						labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-						laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-						voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-						cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			</div>
+			<chapter title="Publication Design">
 
-			
-    <div class="slide" data-category="Publication Design" data-title="Oracle" id="">
-        <div class="h-slides">
-            
-        </div>
-    </div>
+				<pages>
+					<page data-category="Publication Design" id="publication-design" data-index>
+						<div class="title-card">
+							<h2>Publication Design</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+								ut
+								labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+								ullamco
+								laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+								in
+								voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+								cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+						</div>
+					</page>
+
+					<page data-category="Publication Design" data-subcategory="Oracle" id="oracle" data-index>
+						<div class="title-card">
+							<h2>Oracle</h2>
+							<p>As a visual designer at Oracle (2012-2014), I contributed to the print designs of the
+								flagship <i>Oracle</i> magazine as well as <i>Profit</i> magazine (a lifestyle
+								publication) and the hybrid online/print magazine, <i>Java</i>.</p>
+						</div>
+					</page>
+
+					
+<!-- <div class="slide" data-category="" data-title="" id="">
+        <div class="h-slides"> -->
+
+<page data-id="oracle" id="publication-design-oracle-public-cloud.-private-cloud">
+	<figure>
+		<img src="https://res.cloudinary.com/dhenrau1q/image/upload/v1/portfolio/omag-public-private-cloud-cover_duc709" loading="lazy">
+		<figcaption>
+			<eyebrow>Oracle Magazine | Cover</eyebrow>
+			<h3>Public Cloud. Private Cloud</h3>
+			<p></p>
+		</figcaption>
+	</figure>
+</page>
+
+<page data-id="oracle" id="publication-design-oracle-the-public-cloud">
+	<figure>
+		<img src="https://res.cloudinary.com/dhenrau1q/image/upload/v1/portfolio/omag-public-cloud-opener_yucr9k" loading="lazy">
+		<figcaption>
+			<eyebrow>Opener</eyebrow>
+			<h3>The Public Cloud</h3>
+			<p></p>
+		</figcaption>
+	</figure>
+</page>
+
+<page data-id="oracle" id="publication-design-oracle-oracle-magazine:-the-private-cloud">
+	<figure>
+		<img src="https://res.cloudinary.com/dhenrau1q/image/upload/v1/portfolio/omag-private-cloud-opener_bqxqti" loading="lazy">
+		<figcaption>
+			<eyebrow>Opener</eyebrow>
+			<h3>Oracle Magazine: The Private Cloud</h3>
+			<p></p>
+		</figcaption>
+	</figure>
+</page>
+
+<page data-id="oracle" id="publication-design-oracle-apps-on-oracle-exadata">
+	<figure>
+		<img src="https://res.cloudinary.com/dhenrau1q/image/upload/v1/portfolio/omag-exadata-opener_svkexo" loading="lazy">
+		<figcaption>
+			<eyebrow>Opener</eyebrow>
+			<h3>Apps on Oracle Exadata</h3>
+			<p></p>
+		</figcaption>
+	</figure>
+</page>
+
+<page data-id="oracle" id="publication-design-oracle-embeded-everywhere">
+	<figure>
+		<img src="https://res.cloudinary.com/dhenrau1q/image/upload/v1/portfolio/java-embedded-everywhere-cover_nbzdhp" loading="lazy">
+		<figcaption>
+			<eyebrow>Java Magazine Cover</eyebrow>
+			<h3>Embeded Everywhere</h3>
+			<p></p>
+		</figcaption>
+	</figure>
+</page>
+
+<page data-id="oracle" id="publication-design-oracle-the-future-of-money">
+	<figure>
+		<img src="https://res.cloudinary.com/dhenrau1q/image/upload/v1/portfolio/java-canadian-mint-opener_foug3g" loading="lazy">
+		<figcaption>
+			<eyebrow>Java Magazine Opener</eyebrow>
+			<h3>The Future of Money</h3>
+			<p>One of four openers that carried through the style of the cover.</p>
+		</figcaption>
+	</figure>
+</page>
+
+<page data-id="oracle" id="publication-design-oracle-the-community-issue">
+	<figure>
+		<img src="https://res.cloudinary.com/dhenrau1q/image/upload/v1/portfolio/java-community-issue-cover_mwt0cj" loading="lazy">
+		<figcaption>
+			<eyebrow>Java Magazine Cover</eyebrow>
+			<h3>The Community Issue</h3>
+			<p></p>
+		</figcaption>
+	</figure>
+</page>
+
+<page data-id="oracle" id="publication-design-oracle-growing-on-open">
+	<figure>
+		<img src="https://res.cloudinary.com/dhenrau1q/image/upload/v1/portfolio/java-growing-on-open-cover_qurxaz" loading="lazy">
+		<figcaption>
+			<eyebrow>Java Magazine Cover</eyebrow>
+			<h3>Growing on Open</h3>
+			<p></p>
+		</figcaption>
+	</figure>
+</page>
+
+<page data-id="oracle" id="publication-design-oracle-datawatch">
+	<figure>
+		<img src="https://res.cloudinary.com/dhenrau1q/image/upload/v1/portfolio/profit-datawatch-cloud-barriers_c4iwwg" loading="lazy">
+		<figcaption>
+			<eyebrow>Column</eyebrow>
+			<h3>Datawatch</h3>
+			<p>Concept and sketcy bhy Nicholas Pavkovic. Final artwork by I-Hua Chen.</p>
+		</figcaption>
+	</figure>
+</page>
+
+<page data-id="oracle" id="publication-design-oracle-datawatch">
+	<figure>
+		<img src="https://res.cloudinary.com/dhenrau1q/image/upload/v1/portfolio/profit-datawatch-dance_gl1eiu" loading="lazy">
+		<figcaption>
+			<eyebrow>Column</eyebrow>
+			<h3>Datawatch</h3>
+			<p>Concept and art direction by Nicholas Pavkovic. Final art by I-Hua Chen.</p>
+		</figcaption>
+	</figure>
+</page>
+
+<!-- </div>
+    </div> -->
 
 
-			</div>
+					<page data-category="Publication Design" data-subcategory="Ziff-Davis Verlag" id="ziff-davis"
+						data-index>
+						<div class="title-card">
+							<h2>Ziff-Davis Verlag</h2>
+							<p>Arriving in Munich in 1994 for a short redesign assignment for Ziff-Davis Verlag, I
+								stayed on through 1997, serving as Art Director and, later, Creative Director.
+								Publications included <i>PC Professionell</i> (analogous to <i>PC Magazine</i> in the
+								U.S.) and the launch of <i>pl@net</i>, an internet culture magazine. My staff included
+								junior art directors, a layout department and a photo studio.</p>
+						</div>
+					</page>
 
-			<!-- PERSONAL WORK -->
+					
+<!-- <div class="slide" data-category="" data-title="" id="">
+        <div class="h-slides"> -->
 
-			<div class="slide">
-				<div class="title-card">
-					<h2>Personal Work</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-						labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-						laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-						voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-						cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				</div>
-			</div>
+<page data-id="ziff-davis" id="publication-design-ziff-davis-pl@net">
+	<figure>
+		<img src="https://res.cloudinary.com/dhenrau1q/image/upload/v1/portfolio/planet_cover_gun_vlynjb" loading="lazy">
+		<figcaption>
+			<eyebrow>pl@net | cover</eyebrow>
+			<h3>pl@net</h3>
+			<p>Launched with a skeleton, startup crew, the magazine quickly made waves for taking on thorny issues of the web: security, commerce, censorship.</p>
+		</figcaption>
+	</figure>
+</page>
 
-			
-    <div class="slide" data-category="Personal Work" data-title="Posters" id="">
-        <div class="h-slides">
-            
-        </div>
-    </div>
+<page data-id="ziff-davis" id="publication-design-ziff-davis-table-of-contents">
+	<figure>
+		<img src="https://res.cloudinary.com/dhenrau1q/image/upload/v1/portfolio/toc_t3zvlx" loading="lazy">
+		<figcaption>
+			<eyebrow>pl@net 1996-03 | toc</eyebrow>
+			<h3>Table of Contents</h3>
+			<p>The March/April 1996 issue focused on internet censorship, and the table of contents highlighted the user groups that had been removed by Compuserve.</p>
+		</figcaption>
+	</figure>
+</page>
+
+<page data-id="ziff-davis" id="publication-design-ziff-davis-the-disruption-of-censorship">
+	<figure>
+		<img src="https://res.cloudinary.com/dhenrau1q/image/upload/v1/portfolio/sto%CC%88rfallzensur_vx38pj" loading="lazy">
+		<figcaption>
+			<eyebrow>pl@net 1996-03 | opener</eyebrow>
+			<h3>The Disruption of Censorship</h3>
+			<p></p>
+		</figcaption>
+	</figure>
+</page>
+
+<page data-id="ziff-davis" id="publication-design-ziff-davis-visions-of-the-internet&#39;s-future">
+	<figure>
+		<img src="https://res.cloudinary.com/dhenrau1q/image/upload/v1/portfolio/visionen_q4h1lp" loading="lazy">
+		<figcaption>
+			<eyebrow>pl@net 1996-05 | opener</eyebrow>
+			<h3>Visions of the Internet’s Future</h3>
+			<p></p>
+		</figcaption>
+	</figure>
+</page>
+
+<page data-id="ziff-davis" id="publication-design-ziff-davis-anxiety-and-paranoia">
+	<figure>
+		<img src="https://res.cloudinary.com/dhenrau1q/image/upload/v1/portfolio/ap_gizvo0" loading="lazy">
+		<figcaption>
+			<eyebrow>pl@net 1996-10 | opener</eyebrow>
+			<h3>Anxiety and Paranoia</h3>
+			<p>Opener for a series of articles on conspiracy theories, cryptography, and PGP (pretty good privacy).</p>
+		</figcaption>
+	</figure>
+</page>
+
+<page data-id="ziff-davis" id="publication-design-ziff-davis-true-lies!">
+	<figure>
+		<img src="https://res.cloudinary.com/dhenrau1q/image/upload/v1/portfolio/truelies_cvolo9" loading="lazy">
+		<figcaption>
+			<eyebrow>pl@net 1996-10 | opener</eyebrow>
+			<h3>True Lies!</h3>
+			<p>An article on the perils of web journalism.</p>
+		</figcaption>
+	</figure>
+</page>
+
+<page data-id="ziff-davis" id="publication-design-ziff-davis-szene">
+	<figure>
+		<img src="https://res.cloudinary.com/dhenrau1q/image/upload/v1/portfolio/axgwegcvoakuk8igjf13" loading="lazy">
+		<figcaption>
+			<eyebrow>internet pro | section</eyebrow>
+			<h3>Szene</h3>
+			<p>Magazine section for brief news clips.</p>
+		</figcaption>
+	</figure>
+</page>
+
+<page data-id="ziff-davis" id="publication-design-ziff-davis-inhalt-(contents)">
+	<figure>
+		<img src="https://res.cloudinary.com/dhenrau1q/image/upload/v1/portfolio/blflu9iroaycpev7iaky" loading="lazy">
+		<figcaption>
+			<eyebrow>internet pro | TOC</eyebrow>
+			<h3>Inhalt (Contents)</h3>
+			<p>Table of contents for Internet Professionell, a generalist publication covering web technologies.</p>
+		</figcaption>
+	</figure>
+</page>
+
+<page data-id="ziff-davis" id="publication-design-ziff-davis-der-kosmos-radiomann">
+	<figure>
+		<img src="https://res.cloudinary.com/dhenrau1q/image/upload/v1/portfolio/englzrzhmaqg8xxb6tjb" loading="lazy">
+		<figcaption>
+			<eyebrow>internet pro | feature opener</eyebrow>
+			<h3>Der Kosmos Radiomann</h3>
+			<p>Feature about Wau Holland, legendary German hacker and anti-censorship activist.</p>
+		</figcaption>
+	</figure>
+</page>
+
+<page data-id="ziff-davis" id="publication-design-ziff-davis-killer-websites">
+	<figure>
+		<img src="https://res.cloudinary.com/dhenrau1q/image/upload/v1/portfolio/yfkdvtcdcvbcbnhtlhwh" loading="lazy">
+		<figcaption>
+			<eyebrow>internet pro | opener</eyebrow>
+			<h3>Killer Websites</h3>
+			<p>Article about adding interactive enhancements to web pages using early-web technologies.</p>
+		</figcaption>
+	</figure>
+</page>
+
+<!-- </div>
+    </div> -->
 
 
+					<page data-category="Publication Design" data-subcategory="Pulp Magazine" id="pulp-magazine"
+						data-index>
+						<div class="title-card">
+							<h2>Pulp Magazine</h2>
+							<p>Founded in 1988 with photographer/illustrator Francisco Caceres, this DIY magazine
+								entered the scene during the last (?) flowering of print magazines prior to the arrival
+								of the web. In addition to providing me a place to spread my wings as a publication
+								designer and writer, it was a valuable outlet for creatives of all types in Chicago.</p>
+						</div>
+					</page>
+
+					
+<!-- <div class="slide" data-category="" data-title="" id="">
+        <div class="h-slides"> -->
+
+<!-- </div>
+    </div> -->
+
+
+					<page data-category="Publication Design" data-subcategory="Covers & Miscellania" id="covers"
+						data-index>
+						<div class="title-card">
+							<h2>Covers & Miscellania</h2>
+							<p>A variety of covers and other items related to books, magazines &amp; reports.</p>
+						</div>
+					</page>
+
+					
+<!-- <div class="slide" data-category="" data-title="" id="">
+        <div class="h-slides"> -->
+
+<page data-id="pub-misc" id="publication-design-pub-misc">
+	<figure>
+		<img src="https://res.cloudinary.com/dhenrau1q/image/upload/v1/portfolio/cover-curmudgeon-1_byxfck" loading="lazy">
+		<figcaption>
+			<eyebrow></eyebrow>
+			<h3></h3>
+			<p></p>
+		</figcaption>
+	</figure>
+</page>
+
+<page data-id="pub-misc" id="publication-design-pub-misc">
+	<figure>
+		<img src="https://res.cloudinary.com/dhenrau1q/image/upload/v1/portfolio/cover-curmudgeon-2_zmvrl7" loading="lazy">
+		<figcaption>
+			<eyebrow></eyebrow>
+			<h3></h3>
+			<p></p>
+		</figcaption>
+	</figure>
+</page>
+
+<page data-id="pub-misc" id="publication-design-pub-misc">
+	<figure>
+		<img src="https://res.cloudinary.com/dhenrau1q/image/upload/v1/portfolio/cover-figments_n3sqjz" loading="lazy">
+		<figcaption>
+			<eyebrow></eyebrow>
+			<h3></h3>
+			<p></p>
+		</figcaption>
+	</figure>
+</page>
+
+<page data-id="pub-misc" id="publication-design-pub-misc">
+	<figure>
+		<img src="https://res.cloudinary.com/dhenrau1q/image/upload/v1/portfolio/cover-speaking-for-marcel-1_lqmomk" loading="lazy">
+		<figcaption>
+			<eyebrow></eyebrow>
+			<h3></h3>
+			<p></p>
+		</figcaption>
+	</figure>
+</page>
+
+<page data-id="pub-misc" id="publication-design-pub-misc">
+	<figure>
+		<img src="https://res.cloudinary.com/dhenrau1q/image/upload/v1/portfolio/cover-speaking-for-marcel-2_xlppv6" loading="lazy">
+		<figcaption>
+			<eyebrow></eyebrow>
+			<h3></h3>
+			<p></p>
+		</figcaption>
+	</figure>
+</page>
+
+<page data-id="pub-misc" id="publication-design-pub-misc">
+	<figure>
+		<img src="https://res.cloudinary.com/dhenrau1q/image/upload/v1/portfolio/cover-ucla-advocacy_lxbtam" loading="lazy">
+		<figcaption>
+			<eyebrow></eyebrow>
+			<h3></h3>
+			<p></p>
+		</figcaption>
+	</figure>
+</page>
+
+<page data-id="pub-misc" id="publication-design-pub-misc">
+	<figure>
+		<img src="https://res.cloudinary.com/dhenrau1q/image/upload/v1/portfolio/cover-ucla-advocacy_zy1ufn" loading="lazy">
+		<figcaption>
+			<eyebrow></eyebrow>
+			<h3></h3>
+			<p></p>
+		</figcaption>
+	</figure>
+</page>
+
+<page data-id="pub-misc" id="publication-design-pub-misc">
+	<figure>
+		<img src="https://res.cloudinary.com/dhenrau1q/image/upload/v1/portfolio/der-facher-example_r5k3zr" loading="lazy">
+		<figcaption>
+			<eyebrow></eyebrow>
+			<h3></h3>
+			<p></p>
+		</figcaption>
+	</figure>
+</page>
+
+<page data-id="pub-misc" id="publication-design-pub-misc">
+	<figure>
+		<img src="https://res.cloudinary.com/dhenrau1q/image/upload/v1/portfolio/drac-infographic_lhwsm5" loading="lazy">
+		<figcaption>
+			<eyebrow></eyebrow>
+			<h3></h3>
+			<p></p>
+		</figcaption>
+	</figure>
+</page>
+
+<page data-id="pub-misc" id="publication-design-pub-misc">
+	<figure>
+		<img src="https://res.cloudinary.com/dhenrau1q/image/upload/v1/portfolio/dutilleux-presentation-example_khfi3h" loading="lazy">
+		<figcaption>
+			<eyebrow></eyebrow>
+			<h3></h3>
+			<p></p>
+		</figcaption>
+	</figure>
+</page>
+
+<!-- </div>
+    </div> -->
+
+
+
+				</pages>
+			</chapter>
+
+			<!-- CODE -->
+
+			<chapter title="Code">
+				<pages>
+
+					<page data-category="Code" id="code" data-index>
+						<div class="title-card">
+							<h2>Code</h2>
+							<p>While there are examples of engineering throughout my portfolio, this section covers some
+								early and more unusual experiments: recent CSS follies as well as code in PostScript and
+								C that dates back to the 1980s.</p>
+						</div>
+					</page>
+
+					<page data-id="PulpModern" id="code-pulpmodern" @enter="showPulp" @exit="resetPulp">
+
+						<figure>
+							<div id="pulpmodern-example" style="opacity: 0">
+								<div id="pulpmodern-characters">
+									<span>A</span><span>B</span><span>C</span><span>D</span><span>E</span><span>F</span><span>G</span><span>H</span><span>I</span><span>J</span><span>K</span><span>L</span><span>M</span><span>N</span><span>O</span><span>P</span><span>Q</span><span>R</span><span>S</span><span>T</span><span>U</span><span>V</span><span>W</span><span>X</span><span>Y</span><span>Z</span>
+								</div>
+
+								<div id="about-pulpmodern">
+									<span>P</span><span>u</span><span>l</span><span>p</span><br><span>M</span><span>o</span><span>d</span><span>e</span><span></span><span>r</span><span>n</span><br><span>1</span><span>9</span><span>8</span><span>8</span>
+								</div>
+							</div>
+							
+							<figcaption>
+								<eyebrow>FONT</eyebrow>
+								<h3>Pulp Modern</h3>
+								<p>Designed in 1988 as the logotype for Pulp Magazine. While rudimentary commercial font design software was available,
+									this constructed font was assembled directly in PostScript using bézier curves
+									created with the first release of Adobe Illustrator.</p>
+							</figcaption>
+						</figure>
+					</page>
+
+					<style>
+						#pulpmodern-wrapper {
+							display: flex;
+							flex-direction: column;
+							gap: 1rem;
+						}
+
+						#pulp-code {
+							/* take up all space not occupied by the figure */
+							flex: 1 1 auto;
+							height: 100%;
+							background: #222;
+						}
+
+						#pulpmodern-wrapper figure {
+							flex: 0 0 auto;
+						}
+					</style>
+
+
+					
+<!-- <div class="slide" data-category="" data-title="" id="">
+        <div class="h-slides"> -->
+
+<!-- </div>
+    </div> -->
+
+
+				</pages>
+			</chapter>
 		</div>
-	</div>
 	</div>
 </main>
     </body>
 </html>
 
 <style>
-    	:root {
-		--ambient-backdrop-rotation: 0deg;
-	}
-
-	html,
+    	html,
 	body {
 		scroll-behavior: auto;
 		margin: 0;
 		padding: 0;
 		touch-action: pan-x pan-y;
 		hyphens: auto;
+		position: relative;
+		font-family: freight-big-pro, sans-serif;
 	}
 
 	#backdrop {
-		font-family: freight-big-pro, sans-serif;
 		position: fixed;
 		top: 0;
 		left: 0;
@@ -147,8 +604,8 @@
 		text-decoration: none;
 	}
 
-	#menu-control,
-	#next-slide {
+
+	#next-page {
 		width: fit-content;
 		position: absolute;
 		top: 12px;
@@ -157,10 +614,12 @@
 		transition: transform 0.5s;
 	}
 
-	#next-slide {
+	#next-page {
 		right: 12px;
 		left: auto;
 	}
+
+	/*
 
 	body.menu-active #menu-control {
 		transform-origin: center;
@@ -190,15 +649,163 @@
 
 	#menu-control:hover #menu-circle {
 		stroke: rgb(255 0 30 / 70%);
+	} */
+
+	#menu-bar {
+		position: fixed;
+		z-index: 1000;
+		height: 36px;
+		padding: 12px;
+		left: 0;
+		right: 0;
+		top: 0;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		gap: 1rem;
 	}
 
-	#menu {
-		opacity: 0;
-		transition: opacity 0.5;
+	#menu-bar button {
+		box-shadow: none;
 	}
 
-	body.menu-active {
+	#hamburger {
+		width: 24px;
+		height: 24px;
+		box-sizing: border-box;
+		cursor: pointer;
+		border-radius: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		border: 1px solid white;
+		background: transparent;
+		opacity: .8;
+		transition: opacity 300ms;
+		position: relative;
+	}
+
+	#hamburger:hover {
 		opacity: 1;
+	}
+
+	#hamburger::before, #hamburger::after {
+		content: '';
+		position: absolute;
+		height: 1px;
+		width: 12px;
+		background: white;
+		transition: transform 300ms;
+		left: 50%;
+		top: 50%;
+		translate: -50% -50%;
+	}
+
+	#hamburger::before {
+		margin-top: -2px;
+	}
+
+	#hamburger::after {
+		margin-top: 2px;
+	}
+
+	.toc-active #hamburger::before {
+		transform: rotate(45deg);
+		margin-top: 0;
+	}
+
+
+	.toc-active #hamburger::after {
+		transform: rotate(-45deg);
+		margin-top: 0;
+	}
+
+
+	#toc {
+		position: fixed;
+		min-width: 200px;
+		min-height: 200px;
+		width: 80vw;
+		height: 80vh;
+		background: black;
+		color: white;
+		opacity: 0;
+		transition: opacity 0.5s;
+		z-index: 999;
+		left: 50%;
+		top: 50%;
+		translate: -50% -50%;
+		box-shadow: 0 0 0 100vmax black;
+		pointer-events: none;
+		line-height: 1;
+	}
+
+	#toc header {
+		font-size: 3rem;
+		font-family: freight-big-pro, sans-serif;
+		margin-bottom: 2rem;
+	}
+
+	body.toc-active #toc {
+		opacity: 1;
+		pointer-events: all;
+	}
+
+	#toc ul {
+		list-style: none;
+	}
+
+	#toc-content {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 32px;
+	}
+
+	#toc-content a {
+		display: flex;
+		align-items: center;
+		margin-bottom: .75rem;
+		padding: 0;
+	}
+
+	#toc-content a.active::after {
+		content: '';
+		display: inline-block;
+		height: 10px;
+		width: 12px;
+		margin-left: 6px;
+		background-size: contain;
+		background-repeat: no-repeat;
+		position: relative;
+		clip-path: polygon(0 50%, 100% 100%, 100% 0);
+		background-color: #1947aa;
+	}
+
+	#toc-content > li {
+		font-size: 1.8rem;
+		padding: 1rem;
+		font-size: 1.5rem;
+		margin-bottom: 1.5rem;
+		border: 1px solid #666;
+		border-radius: 8px;
+		}
+
+	#toc-content > li:has(.active) {
+		background: #ffdf80;
+		color: black;
+		border-color: #ffdf80;
+	}
+
+	#toc-content > li ul {
+		padding-left: 0;
+		font-size: .7rem;
+		font-family: "vinila-extended", sans-serif;
+		font-weight: 400;
+		font-style: normal;
+		color: inherit;
+		text-transform: uppercase;
+		letter-spacing: .1rem;
 	}
 
 	h2,
@@ -211,7 +818,7 @@
 		text-align: left;
 		padding: 0;
 		position: relative;
-		margin: 0;
+		margin: 0 0 .75rem 0;
 
 		font-variant-numeric: lining-nums;
 		-moz-font-feature-settings: "lnum";
@@ -233,11 +840,11 @@
 		letter-spacing: 0.2em;
 		text-transform: uppercase;
 		color: rgb(252, 240, 151);
-		margin: 0;
+		margin: 0 0 .4rem 0;
 	}
 
 
-	.slide p {
+	page p {
 		margin: 0;
 		font-family: freight-text-pro, serif;
 		font-weight: 600;
@@ -266,7 +873,7 @@
 		text-align: center;
 	}
 
-	.slide h1 {
+	page h1 {
 		text-transform: capitalize;
 		margin: 0 auto;
 		width: fit-content;
@@ -274,20 +881,20 @@
 		line-height: 0.9;
 	}
 
-	.slide .title-card {
+	page .title-card {
 		max-width: 37rem;
 		margin: 0 auto;
 	}
 
-	.slide .title-card p {
-		color: #e3eeff;
+	page .title-card p {
+		color: #DEDEDE;
 		margin-top: .5rem;
 		font-size: 1.4rem;
 		line-height: 1.3;
 	}
 
 	@media (max-width: 481px) {
-		.slide h1 {
+		page h1 {
 			font-size: 40px;
 		}
 	}
@@ -324,8 +931,10 @@
 		height: 100vh;
 		box-sizing: border-box;
 		overflow: hidden;
+		position: relative;
 		/*   scroll-snap-align: start end; */
 	}
+
 
 	#scroller {
 		scroll-snap-type: y mandatory;
@@ -338,7 +947,7 @@
 		overflow-y: scroll;
 	}
 
-	.slide {
+	chapter, page {
 		flex: 0 0 auto;
 		height: 100%;
 		margin: 0;
@@ -354,20 +963,75 @@
 		align-items: center;
 		color: white;
 		overflow: hidden;
-		/* background-color: #aaa; */
 		box-shadow: 0 0 100px inset rgba(0, 0, 0, 0.2);
-		/* background-color: #222; */
 		color: white;
 		transition: color 2s 1s;
 		font-family: freight-big-pro, serif;
 		font-size: 8rem;
 	}
 
+	/* chapter::before, chapter::after {
+		content: attr(title);
+		position: absolute;
+		width: 100%;
+		top: 0;
+		height: 24px;
+		text-align: center;
+		color: white;
+		font-family: "vinila-extended", sans-serif;
+		font-weight: 400;
+		font-size: .8rem;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		opacity: 0;
+		transition: opacity 300ms;
+	}
+
+	chapter::after {
+		top: auto;
+		bottom: 0;
+	}
+
+	chapter.entering::before, chapter.entering::after {
+		opacity: 1;
+	} */
+
+	.show {
+		opacity: 1 !important;
+	}
+
+	#next-chapter, #previous-chapter {
+		position: absolute;
+		width: fit-content;
+		left: 50%;
+		translate: -50% 0;
+		padding: 1rem;
+		top: 0;
+		border-radius: 0 0 12px 12px;
+		box-shadow: 0 0 8px inset rgba(255,255,255,0.5);
+		text-align: center;
+		color: white;
+		font-family: "vinila-extended", sans-serif;
+		font-weight: 400;
+		font-size: .8rem;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		opacity: 0;
+		transition: opacity 300ms;
+		z-index: 1000;
+	}
+
+	#next-chapter {
+		top: auto;
+		bottom: 0;
+		border-radius: 12px 12px 0 0;
+	}
+
 	/* .slide.active {
 		color: red;
 	} */
 
-	.h-slides {
+	pages {
 		width: 100%;
 		height: 100%;
 		display: flex;
@@ -377,23 +1041,23 @@
 		overflow-x: scroll;
 	}
 
-	.slide.active>figure {
+	page.active>figure {
 		opacity: 1;
 	}
 
-	.h-slides .slide {
+	pages page {
 		position: static;
 		width: 100%;
 		height: 100%;
 		pointer-events: none;
 	}
 
-	.slide {
+	page {
 		display: grid;
 		place-content: center;
 	}
 
-	.slide figure {
+	page figure {
 		height: 90vh;
 		width: 90vw;
 		transition: opacity 1s;
@@ -402,21 +1066,32 @@
 		margin: 0;
 	}
 
-	.slide figure img {
+	page figure img {
 		max-width: 100%;
 		display: block;
 		margin: 0 auto;
 		max-height: calc(90dvh - 200px);
 	}
 
-	.slide figure figcaption {
-		max-width: 500px;
-		margin: 1.5rem auto 0 auto;
-		padding: 1rem;
-		border-radius: 1rem;
-		border: 1px solid #444;
-		border-top: none;
-		border-bottom: none;
+	page figure figcaption {
+		max-width: 600px;
+		margin: 2rem auto 0 auto;
+		padding: 1rem 1.5rem;
+		position: relative;
+	}
+
+	page figure figcaption::after {
+    position: absolute;
+    content: '';
+    inset: 0;
+    border-left: 1px solid #666;
+    border-right: 1px solid #666;
+    /* border-top: 1px solid #666; */
+    /* width: 72px; */
+    background: linear-gradient(#666, #666), linear-gradient(#666, #666), linear-gradient(#666, #666), linear-gradient(#666, #666);
+    background-size: 8px 1px, 8px 1px, 8px 1px, 8px 1px;
+    background-position: top left, bottom left, top right, bottom right;
+    background-repeat: no-repeat;
 	}
 
 	.image {
@@ -426,13 +1101,13 @@
 		background-repeat: no-repeat;
 	}
 
-	/* .slide > * {
+	/* .page > * {
   opacity: 0;
   transform: translateY(-20px);
   transition: opacity 1s 500ms, transform 1s 500ms;
 }
 
-.slide.active > * {
+.page.active > * {
   opacity: 1;
   transform: translateY(0px);
 }
@@ -475,58 +1150,6 @@
 }
  */
 
-	#menu {
-		font-family: freight-big-pro, serif;
-		font-weight: 900;
-		font-style: normal;
-		font-size: 20px;
-		letter-spacing: 1px;
-		line-height: 2;
-		left: 0;
-		top: 0;
-		padding: 10vw;
-		opacity: 1;
-		justify-content: flex-start;
-		align-items: flex-start;
-		width: 100vw;
-		height: 100vh;
-		box-sizing: border-box;
-		scroll-snap-align: start end;
-		display: flex;
-		flex-wrap: wrap;
-		gap: 54px;
-		text-align: left;
-	}
-
-	#index>div {
-		min-width: 100px;
-		padding-left: 18px;
-		border-left: 1px solid #666;
-	}
-
-	#index ul {
-		list-style-type: none;
-		color: #999;
-		margin-block-start: 0;
-		margin-block-end: 0;
-		margin-inline-start: 0px;
-		margin-inline-end: 0px;
-		padding-inline-start: 0;
-	}
-
-	#index ul li {
-		text-align: left;
-		cursor: pointer;
-		text-transform: capitalize;
-	}
-
-	#index header {
-		color: #aaa;
-		text-align: left;
-		margin-top: 0;
-		padding-top: 0;
-	}
-
 	.active {
 		opacity: 1;
 	}
@@ -544,176 +1167,10 @@
 	.darkerbrown {
 		color: #291717;
 	}
+
+
+	/* PAGE-SPECIFIC STYLES */
+
 </style>
 
-<script>
-    function $(selector) {
-	const list = document.querySelectorAll(selector);
-	if (list.length == 1) return list[0];
-	else return list;
-  }
-  
-  function $id(selector) {
-	return document.getElementById(selector);
-  }
-  
-  const dom = {
-	scrollWrap: $id("scroll-wrap"),
-	main: $("main"),
-	scroller: $id("scroller")
-  };
-  
-//   dom.scrollWrap.scrollIntoView();
-  
-  document.getElementById("full-screen-button").addEventListener("click", (e) => {
-	document.documentElement.requestFullscreen();
-	document.body.classList.add("fullscreen");
-  });
-  
-  document.documentElement.addEventListener("fullscreenchange", (e) => {
-	if (document.fullscreenElement == null)
-	  document.body.classList.remove("fullscreen");
-  });
-  
-  // Menu Indicator
-  
-  // $("#menu-control").addEventListener("click", (e) => {
-  //   const destination = document.body.classList.contains("menu-active")
-  //     ? dom.scrollWrap
-  //     : dom.menu;
-  //   destination.scrollIntoView({
-  //     behavior: "smooth"
-  //   });
-  // });
-  
-  //   const menuActive = new IntersectionObserver(
-  //     (elements, observer) => {
-  //       elements.forEach((element) => {
-  //         document.body.classList.toggle("menu-active", element.isIntersecting);
-  //       });
-  //     },
-  //     {
-  //       root: dom.main,
-  //       rootMargin: "0px",
-  //       threshold: 0.5
-  //     }
-  //   );
-  
-  //   menuActive.observe(dom.menu);
-  
-  // Slide Intersection Observer
-  
-  const slideEvents = {
-	enter: new Event("enter"),
-	exit: new Event("exit")
-  };
-  
-  const enterSlide = new IntersectionObserver(
-	(elements, observer) => {
-	  elements.forEach((element) => {
-		if (element.isIntersecting) {
-		  element.target.classList.add("active");
-		  if (element.target.id) window.location.hash = element.target.id;
-		  window.setTimeout(() => {
-			if (element.target.classList.contains("active"))
-			  element.target.dispatchEvent(slideEvents.enter);
-		  }, 2000);
-		} else {
-		  element.target.classList.remove("active");
-		  element.target.dispatchEvent(slideEvents.exit);
-		}
-	  });
-	},
-	{
-	  root: dom.scroller,
-	  rootMargin: "0px",
-	  threshold: 0.5
-	}
-  );
-  
-  // Observe Slides and create data structure for index
-  
-  const siteIndex = {};
-  
-  $(".slide").forEach((slide) => {
-	enterSlide.observe(slide);
-	if (!(slide.dataset.category || slide.dataset.title)) return;
-	siteIndex[slide.dataset.category] = siteIndex[slide.dataset.category] || [];
-	siteIndex[slide.dataset.category].push(slide);
-  });
-
-  console.log(siteIndex);
-  
-  // Build Index
-  
-  // const index = document.getElementById("index");
-  
-  // Object.keys(siteIndex).forEach((category) => {
-  //   // Create section
-  //   const section = document.createElement("section");
-  //   index.appendChild(section);
-  //   let sectionContent = `<header>${category}</header><ul>`;
-  //   siteIndex[category].forEach(
-  //     (indexEntry) =>
-  //       (sectionContent += `<li><a href="#${indexEntry.id}">${indexEntry.dataset.title}</a></li>`)
-  //   );
-  //   sectionContent += "</ul>";
-  //   section.innerHTML = sectionContent;
-  // });
-  
-  // $(".slide[data-bimage]").forEach((slide) => {
-  //   const photoBackdrop = document.createElement("div");
-  //   photoBackdrop.classList.add("photo-backdrop");
-  //   console.log("Adding element background: " + slide.dataset.bimage);
-  //   // photoBackdrop.src = slide.dataset.bimage;
-  //   photoBackdrop.style.backgroundImage = `url(${slide.dataset.bimage}`;
-  //   slide.appendChild(photoBackdrop);
-  // });
-  
-//   $("[data-navigate]").forEach((link) => {
-//     console.log("Assigning", link);
-//     link.addEventListener("click", (e) =>
-//       document.getElementById(e.target.dataset.navigate).scrollIntoView({
-//         behavior: e.target.dataset.navigate == "menu" ? "smooth" : "auto"
-//       })
-//     );
-//   });
-  
-  // Home
-  
-  /* 
-	// These are not currently used — here for when we add left and right paddles
-  
-	$("#next-slide").addEventListener("click", () =>
-	  nextSlide($(window.location.hash))
-	);
-  
-	$("#previous-slide").addEventListener("click", () =>
-	  previousSlide($(window.location.hash))
-	);
-  }
-  
-	function nextSlide(thisSlide) {
-	  const nextId = thisSlide.nextElementSibling.id;
-	  if (nextId) window.location.hash = nextId;
-	  else window.location.hash = "home";
-	}
-  
-  
-  */
-  
-  const lightbox = (e) => {
-	console.log("Called Lightbox")
-	const images = e.target.parentElement.querySelectorAll("img");
-	const theScrim = $id("scrim");
-  
-	theScrim.innerHTML = images[0];
-	theScrim.classList.add("active");
-  };
-  
-  
-  document.querySelectorAll('button').forEach( button => {
-	console.log("Assigning butotn")
-	button.addEventListener('click', lightbox)
-  })
-</script>
+<script type="module" src="./js/main.js"></script>

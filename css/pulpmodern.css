@@ -1,0 +1,38 @@
+	@font-face {
+		font-family: "PulpModern";
+		src: url("/assets/PulpModern-Regular.woff2") format('woff2');
+	  }
+	  
+	#pulpmodern-example {
+		font-family: "PulpModern", sans-serif;
+		display: grid;
+		place-content: center;
+		font-size: 7rem;
+		line-height: 1.2;
+		height: 60vh;
+		transition: opacity 1s;
+		transition-delay: 1s;
+	}
+
+	#pulpmodern-example > div {
+		grid-column: 1;
+		grid-row: 1;
+		overflow-wrap: break-word;
+		max-width: min(12ch, 80vw);
+		animation-fill-mode: both;
+		font-size: clamp(1rem, calc(6rem + 10vw), 9rem);
+	}
+
+	#pulpmodern-example span {
+		transition: transform 1s, opacity 1s;
+		opacity: 0;
+		transform: rotateY(-90deg);
+		display: inline-block;
+		color: white;
+		text-shadow: -3px 0 0 #aec9f7;
+	}
+
+	#pulpmodern-example .shift-out span {
+		opacity: 0 !important;
+		transform: rotateY(-90deg) !important;
+	}
