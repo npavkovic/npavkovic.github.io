@@ -6,11 +6,14 @@ permalink: index.html
 
 {% macro createSlides(imageTag, category ) %}
 <!-- <div class="slide" data-category="{{ dataCategory }}" data-title="{{ dataTitle }}" id="">
-        <div class="h-slides"> -->
+		<div class="h-slides"> -->
 {% for item in images[imageTag] %}
-<page data-id="{{ imageTag }}" id="{{ [category, ' ', imageTag, ' ', item.title ] | join | slugify }}">
+<page
+	data-id="{{ imageTag }}"
+	id="{{ [category, ' ', imageTag, ' ', item.title ] | join | slugify }}"
+>
 	<figure>
-		<img src="{{ item.url }}" loading="lazy">
+		<img src="{{ item.url }}" loading="lazy" />
 		<figcaption>
 			<eyebrow>{{ item.eyebrow }}</eyebrow>
 			<h3>{{ item.title }}</h3>
@@ -20,100 +23,178 @@ permalink: index.html
 </page>
 {% endfor %}
 <!-- </div>
-    </div> -->
+	</div> -->
 {% endmacro %}
 
 <div id="scrim"></div>
-<div id="backdrop"></div>
+<div id="backdrop">
+	<div>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+  </div>
+  <div>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+  </div>
+</div>
 
 <nav id="menu-bar">
 	<button id="hamburger" class=""></button>
 	<div id="toc">
 		<header>Contents</header>
-		<ul id="toc-content">
-		</ul>
+		<ul id="toc-content"></ul>
 	</div>
 	<button id="full-screen-button"></button>
 </nav>
 
-
 <main>
 	<div id="scroll-wrap">
-
 		<div id="previous-chapter"></div>
 		<div id="next-chapter"></div>
 
 		<div id="scroller">
 
-			<!-- PUBLICATION DESIGN -->
-
-			<chapter title="Publication Design">
-
-				<pages>
-					<page data-category="Publication Design" id="publication-design" data-index>
+			<chapter title="Web">
+								<pages>
+					<page data-category="Web" id="web" data-index>
 						<div class="title-card">
-							<h2>Publication Design</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-								ut
-								labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-								ullamco
-								laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-								in
-								voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-								cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							<h2>Web</h2>
+							<p>
+								I programmed my first website in 1997, and have been balancing print &amp; web assignments ever since. Most of the projects here are design/build, where “build” can mean anything from hand-coding HTML/CSS to complex WordPress sites.
 							</p>
 						</div>
 					</page>
 
-					<page data-category="Publication Design" data-subcategory="Oracle" id="oracle" data-index>
+					{{ createSlides("web", "Web") }}
+
+</pages>	
+
+			</chapter>
+			<!-- PUBLICATION DESIGN -->
+
+			<chapter title="Publication Design">
+				<pages>
+					<page data-category="Publication Design" id="publication-design" data-index>
+						<div class="title-card">
+							<h2>Publication Design</h2>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+								veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+								commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+								velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+								cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+								est laborum.
+							</p>
+						</div>
+					</page>
+
+					<page
+						data-category="Publication Design"
+						data-subcategory="Oracle"
+						id="oracle"
+						data-index
+					>
 						<div class="title-card">
 							<h2>Oracle</h2>
-							<p>As a visual designer at Oracle (2012-2014), I contributed to the print designs of the
-								flagship <i>Oracle</i> magazine as well as <i>Profit</i> magazine (a lifestyle
-								publication) and the hybrid online/print magazine, <i>Java</i>.</p>
+							<p>
+								As a visual designer at Oracle (2012-2014), I contributed to the print
+								designs of the flagship <i>Oracle</i> magazine as well as
+								<i>Profit</i> magazine (a lifestyle publication) and the hybrid
+								online/print magazine, <i>Java</i>.
+							</p>
 						</div>
 					</page>
 
 					{{ createSlides("oracle", "Publication Design") }}
 
-					<page data-category="Publication Design" data-subcategory="Ziff-Davis Verlag" id="ziff-davis"
-						data-index>
+					<page
+						data-category="Publication Design"
+						data-subcategory="Ziff-Davis Verlag"
+						id="ziff-davis"
+						data-index
+					>
 						<div class="title-card">
 							<h2>Ziff-Davis Verlag</h2>
-							<p>Arriving in Munich in 1994 for a short redesign assignment for Ziff-Davis Verlag, I
-								stayed on through 1997, serving as Art Director and, later, Creative Director.
-								Publications included <i>PC Professionell</i> (analogous to <i>PC Magazine</i> in the
-								U.S.) and the launch of <i>pl@net</i>, an internet culture magazine. My staff included
-								junior art directors, a layout department and a photo studio.</p>
+							<p>
+								Arriving in Munich in 1994 for a short redesign assignment for Ziff-Davis
+								Verlag, I stayed on through 1997, serving as Art Director and, later,
+								Creative Director. Publications included
+								<i>PC Professionell</i> (analogous to <i>PC Magazine</i> in the U.S.) and
+								the launch of <i>pl@net</i>, an internet culture magazine. My staff
+								included junior art directors, a layout department and a photo studio.
+							</p>
 						</div>
 					</page>
 
 					{{ createSlides("ziff-davis", "Publication Design") }}
 
-					<page data-category="Publication Design" data-subcategory="Pulp Magazine" id="pulp-magazine"
-						data-index>
+					<page
+						data-category="Publication Design"
+						data-subcategory="Pulp Magazine"
+						id="pulp-magazine"
+						data-index
+					>
 						<div class="title-card">
 							<h2>Pulp Magazine</h2>
-							<p>Founded in 1988 with photographer/illustrator Francisco Caceres, this DIY magazine
-								entered the scene during the last (?) flowering of print magazines prior to the arrival
-								of the web. In addition to providing me a place to spread my wings as a publication
-								designer and writer, it was a valuable outlet for creatives of all types in Chicago.</p>
+							<p>
+								Founded in 1988 with photographer/illustrator Francisco Caceres, this DIY
+								magazine entered the scene during the last (?) flowering of print
+								magazines prior to the arrival of the web. In addition to providing me a
+								place to spread my wings as a publication designer and writer, it was a
+								valuable outlet for creatives of all types in Chicago.
+							</p>
 						</div>
 					</page>
 
 					{{ createSlides("pulp", "Publication Design") }}
 
-					<page data-category="Publication Design" data-subcategory="Covers & Miscellania" id="covers"
-						data-index>
+					<page
+						data-category="Publication Design"
+						data-subcategory="Covers & Miscellania"
+						id="covers"
+						data-index
+					>
 						<div class="title-card">
 							<h2>Covers & Miscellania</h2>
-							<p>A variety of covers and other items related to books, magazines &amp; reports.</p>
+							<p>
+								A variety of covers and other items related to books, magazines &amp;
+								reports.
+							</p>
 						</div>
 					</page>
 
 					{{ createSlides("pub-misc", "Publication Design") }}
-
-
 				</pages>
 			</chapter>
 
@@ -121,61 +202,96 @@ permalink: index.html
 
 			<chapter title="Code">
 				<pages>
-
 					<page data-category="Code" id="code" data-index>
 						<div class="title-card">
 							<h2>Code</h2>
-							<p>While there are examples of engineering throughout my portfolio, this section covers some
-								early and more unusual experiments: recent CSS follies as well as code in PostScript and
-								C that dates back to the 1980s.</p>
+							<p>
+								While there are examples of engineering throughout my portfolio, this
+								section covers some early and more unusual experiments: recent CSS follies
+								as well as code in PostScript and C that dates back to the 1980s.
+							</p>
 						</div>
 					</page>
 
-					<page data-id="PulpModern" id="code-pulpmodern" @enter="showPulp" @exit="resetPulp">
-
+					<page
+						data-id="PulpModern"
+						id="code-pulpmodern"
+						data-category="Code"
+						@enter="showPulp"
+						@exit="resetPulp"
+					>
 						<figure>
 							<div id="pulpmodern-example" style="opacity: 0">
 								<div id="pulpmodern-characters">
-									<span>A</span><span>B</span><span>C</span><span>D</span><span>E</span><span>F</span><span>G</span><span>H</span><span>I</span><span>J</span><span>K</span><span>L</span><span>M</span><span>N</span><span>O</span><span>P</span><span>Q</span><span>R</span><span>S</span><span>T</span><span>U</span><span>V</span><span>W</span><span>X</span><span>Y</span><span>Z</span>
+									<span>A</span><span>B</span><span>C</span><span>D</span><span>E</span
+									><span>F</span><span>G</span><span>H</span><span>I</span><span>J</span
+									><span>K</span><span>L</span><span>M</span><span>N</span><span>O</span
+									><span>P</span><span>Q</span><span>R</span><span>S</span><span>T</span
+									><span>U</span><span>V</span><span>W</span><span>X</span><span>Y</span
+									><span>Z</span>
 								</div>
 
 								<div id="about-pulpmodern">
-									<span>P</span><span>u</span><span>l</span><span>p</span><br><span>M</span><span>o</span><span>d</span><span>e</span><span></span><span>r</span><span>n</span><br><span>1</span><span>9</span><span>8</span><span>8</span>
+									<span>P</span><span>u</span><span>l</span><span>p</span><br /><span
+										>M</span
+									><span>o</span><span>d</span><span>e</span><span></span><span>r</span
+									><span>n</span><br /><span>1</span><span>9</span><span>8</span
+									><span>8</span>
 								</div>
 							</div>
-							
+
 							<figcaption>
 								<eyebrow>FONT</eyebrow>
 								<h3>Pulp Modern</h3>
-								<p>Designed in 1988 as the logotype for Pulp Magazine. While rudimentary commercial font design software was available,
-									this constructed font was assembled directly in PostScript using bézier curves
-									created with the first release of Adobe Illustrator.</p>
+								<p>
+									Designed in 1988 as the logotype for Pulp Magazine. While rudimentary
+									commercial font design software was available, this constructed font was
+									assembled directly in PostScript using bézier curves created with the
+									first release of Adobe Illustrator.
+								</p>
 							</figcaption>
 						</figure>
 					</page>
 
-					<style>
-						#pulpmodern-wrapper {
-							display: flex;
-							flex-direction: column;
-							gap: 1rem;
-						}
-
-						#pulp-code {
-							/* take up all space not occupied by the figure */
-							flex: 1 1 auto;
-							height: 100%;
-							background: #222;
-						}
-
-						#pulpmodern-wrapper figure {
-							flex: 0 0 auto;
-						}
-					</style>
-
+					<page
+						data-id="Orbits"
+						id="code-orbits"
+						@enter="showOrbits"
+						@exit="resetOrbits"
+						data-category="Code"
+					>
+						<figure>
+							<div id="orbits-html" style="height: 60vh">
+								<div id="bubble-rink1">
+									<div class="bubble">
+										<div class="gears"></div>
+									</div>
+									<div class="bubble">
+										<div class="gears"></div>
+									</div>
+								</div>
+								<div id="bubble-rink2">
+									<div class="bubble">
+										<div class="gears"></div>
+									</div>
+									<div class="bubble">
+										<div class="gears"></div>
+									</div>
+								</div>
+							</div>
+							<figcaption>
+								<eyebrow>CSS EXPERIMENT</eyebrow>
+								<h3>Orbits</h3>
+								<p>
+									As some of the other pages demonstrate, I’m a big fan of transparency
+									and layering in design. Here those two interests are paired with
+									animation.
+								</p>
+							</figcaption>
+						</figure>
+					</page>
 
 					{{ createSlides("code", "Code") }}
-
 				</pages>
 			</chapter>
 		</div>

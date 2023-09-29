@@ -16,5 +16,6 @@ export function loadStyles(filePath) {
   };
 
   document.head.appendChild(link);
+  console.log("Stylesheet loaded: ", filePath);
  });
 }
