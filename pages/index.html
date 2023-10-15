@@ -4,16 +4,16 @@ layout: default.njk
 permalink: index.html
 ---
 
-{% macro createSlides(imageTag, category ) %}
-<!-- <div class="slide" data-category="{{ dataCategory }}" data-title="{{ dataTitle }}" id="">
-		<div class="h-slides"> -->
-{% for item in images[imageTag] %}
-<page
-	data-id="{{ imageTag }}"
-	id="{{ [category, ' ', imageTag, ' ', item.title ] | join | slugify }}"
->
+{% macro createSlides(imageTag, category, subcategory ) %}
+<!-- CATEGORY: {{ category }} -->
+{% for item in images.items[imageTag] %}
+<page data-id="{{ imageTag }}" data-category="{{ category }}" id="{{ item.slug }}"{% if loop.index == 1 and subcategory %}data-subcategory="{{ subcategory }}" data-index{% endif %}>
 	<figure>
-		<img src="{{ item.url }}" loading="lazy" />
+		<images>
+			{% for imageUrl in item.urls %}
+			<div><img src="{{ imageUrl }}" loading="lazy" /></div>
+			{% endfor %}
+		</images>
 		<figcaption>
 			<eyebrow>{{ item.eyebrow }}</eyebrow>
 			<h3>{{ item.title }}</h3>
@@ -27,52 +27,26 @@ permalink: index.html
 {% endmacro %}
 
 <div id="scrim"></div>
-<div id="backdrop">
-	<div>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-  </div>
-  <div>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-    <p></p>
-  </div>
-</div>
+<div id="backdrop"></div>
 
 <nav id="menu-bar">
 	<button id="hamburger" class=""></button>
 	<div id="toc">
 		<header>Contents</header>
 		<ul id="toc-content"></ul>
+		<header>Visual Index</header>
+		<div id="toc-visual-index">
+			<ul>
+				{% for tag in images.tags %}
+				<h2>{{ tag }}</h2>
+				{% for item in images.items[tag] %}
+				<li><a href="#{{ item.slug }}"> <img src="{{ item.thumbnail }}"/></a></li>
+				{% endfor %} {% endfor %}
+			</ul>
+		</div>
+
+		<style>
+		</style>
 	</div>
 	<button id="full-screen-button"></button>
 </nav>
@@ -83,22 +57,22 @@ permalink: index.html
 		<div id="next-chapter"></div>
 
 		<div id="scroller">
-
 			<chapter title="Web">
-								<pages>
+				<pages>
 					<page data-category="Web" id="web" data-index>
 						<div class="title-card">
 							<h2>Web</h2>
 							<p>
-								I programmed my first website in 1997, and have been balancing print &amp; web assignments ever since. Most of the projects here are design/build, where “build” can mean anything from hand-coding HTML/CSS to complex WordPress sites.
+								I programmed my first website in 1997, and have been balancing print &amp;
+								web assignments ever since. Most of the projects here are design/build,
+								where “build” can mean anything from hand-coding HTML/CSS to complex
+								WordPress sites.
 							</p>
 						</div>
 					</page>
 
 					{{ createSlides("web", "Web") }}
-
-</pages>	
-
+				</pages>
 			</chapter>
 			<!-- PUBLICATION DESIGN -->
 
@@ -186,7 +160,7 @@ permalink: index.html
 						data-index
 					>
 						<div class="title-card">
-							<h2>Covers & Miscellania</h2>
+							<h2>Covers &amp; Miscellania</h2>
 							<p>
 								A variety of covers and other items related to books, magazines &amp;
 								reports.
@@ -195,6 +169,10 @@ permalink: index.html
 					</page>
 
 					{{ createSlides("pub-misc", "Publication Design") }}
+
+					{{ createSlides("poster", "Print", "Posters") }}
+					{{ createSlides("presentation", "Print", "Presentation") }}
+
 				</pages>
 			</chapter>
 
@@ -217,6 +195,8 @@ permalink: index.html
 						data-id="PulpModern"
 						id="code-pulpmodern"
 						data-category="Code"
+						data-subcategory="Pulp Modern"
+						data-index
 						@enter="showPulp"
 						@exit="resetPulp"
 					>
@@ -259,6 +239,8 @@ permalink: index.html
 						@enter="showOrbits"
 						@exit="resetOrbits"
 						data-category="Code"
+						data-subcategory="Orbits"
+						data-index
 					>
 						<figure>
 							<div id="orbits-html" style="height: 60vh">
